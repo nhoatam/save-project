@@ -1,0 +1,434 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Gilroy-Bold"; /* Đặt tên tùy ý cho font */
+  src: url("/src/assets/fonts/SVN-Gilroy-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Gilroy-Italic"; /* Đặt tên tùy ý cho font */
+  src: url("/src/assets/fonts/SVN-Gilroy-Italic.otf") format("opentype");
+}
+@font-face {
+  font-family: "Gilroy-Medium"; /* Đặt tên tùy ý cho font */
+  src: url("/src/assets/fonts/SVN-Gilroy-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "Gilroy-Regular"; /* Đặt tên tùy ý cho font */
+  src: url("/src/assets/fonts/SVN-Gilroy-Regular.otf") format("opentype");
+}
+
+/* CSS animation for sliding effect */
+@keyframes slide-down-right {
+  from {
+    transform: translateY(-50px) translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up-right {
+  from {
+    transform: translateY(50px) translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-down-left {
+  from {
+    transform: translateY(-50px) translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up-left {
+  from {
+    transform: translateY(50px) translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+}
+/* CSS animation for sliding effect */
+
+/* Animation classes */
+.animate-slide-S {
+  animation: slide-down-left 2s ease-out forwards;
+}
+
+.animate-slide-V {
+  animation: slide-up-left 2s ease-out forwards;
+}
+
+.animate-slide-A {
+  animation: slide-down-right 2s ease-out forwards;
+}
+
+.animate-slide-E {
+  animation: slide-up-right 2s ease-out forwards;
+}
+/* Animation classes */
+
+/* ----- */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.word-fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.word-fade-in-right {
+  animation: fadeInRight 1.5s ease-in-out;
+}
+
+/* ----pulse in---- */
+.pulseIn {
+  z-index: -1;
+  position: relative;
+  pointer-events: none;
+
+  /* width: 160px;
+  height: 160px; */
+  border-radius: 50%;
+
+  border: 1px solid #fdeee9;
+  box-shadow:
+    inset 0 0 40px #fdeee9,
+    0 0 50px #fdeee9;
+}
+
+.pulseIn span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  animation: animatePulseIn 6s linear infinite;
+  animation-delay: calc(var(--i) * -1s);
+  border-radius: 50%;
+
+  /* border: 15px solid #fdeee9; */
+}
+
+@keyframes animatePulseIn {
+  0% {
+    width: 150vw;
+    height: 150vw;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    width: 160px;
+    height: 160px;
+    opacity: 0;
+  }
+}
+/* -------- */
+
+/* ----pulse out---- */
+.pulseOut {
+  z-index: -1;
+  position: relative;
+  pointer-events: none;
+
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+
+  /* box-shadow:
+    0 0 15px 5px rgba(248, 178, 152, 0.8),
+    0 0 30px 10px rgba(248, 178, 152, 0.6),
+    0 0 50px 15px rgba(248, 178, 152, 0.4),
+    inset 0 0 50px 15px rgba(248, 178, 152, 0.4),
+    inset 0 0 30px 10px rgba(248, 178, 152, 0.6),
+    inset 0 0 15px 5px rgba(248, 178, 152, 0.8); */
+}
+
+.pulseOut span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  animation: animatePulseOut 6s linear infinite;
+  animation-delay: calc(var(--i) * -1s);
+
+  border-radius: 50%;
+
+  /*   
+  box-shadow:
+    0 0 30px 10px rgba(248, 178, 152, 0.8),
+    inset 0 0 30px 10px rgba(248, 178, 152, 0.8); */
+
+  /* box-shadow:
+    0 0 10px 1px rgba(248, 178, 152, 0.8),
+    inset 0 0 10px 1px rgba(248, 178, 152, 0.8); */
+}
+
+@keyframes animatePulseOut {
+  0% {
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  /* 100% {
+    width: 70vw;
+    height: 70vw;
+    opacity: 0;
+  } */
+  100% {
+    width: 100vw;
+    height: 100vw;
+    opacity: 0;
+  }
+}
+/* -------- */
+
+/* nguồn sáng */
+.shine-circle {
+  position: absolute;
+
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: glow-animation 5s infinite;
+}
+
+.glow-shine-0 {
+  width: 35px;
+  height: 35px;
+  /* background-color: #ff7f4ce0; */
+  background-color: #ffffff70;
+
+  /* position: absolute; */
+
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.glow-shine-1 {
+  width: 60px;
+  height: 60px;
+  /* background-color: #ff7f4c70;
+  box-shadow: 0 0 15px 5px #ff7f4c70; */
+
+  background-color: #ffffff70;
+  box-shadow: 0 0 15px 5px #ffffff70;
+  animation-delay: 0.8s;
+}
+
+.glow-shine-2 {
+  width: 90px;
+  height: 90px;
+  /* background-color: #ff7f4c70;
+  box-shadow: 0 0 15px 5px #ff7f4c70; */
+
+  background-color: #ffffff70;
+  box-shadow: 0 0 15px 5px #ffffff70;
+  animation-delay: 0.6s;
+}
+
+.glow-shine-3 {
+  width: 120px;
+  height: 120px;
+  /* background-color: #ff7f4c70;
+  box-shadow: 0 0 15px 5px #ff7f4c70; */
+
+  background-color: #ffffff70;
+  box-shadow: 0 0 15px 5px #ffffff70;
+  animation-delay: 0.4s;
+}
+
+@keyframes glow-animation {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+/* nguồn sáng */
+
+/* ánh sáng từ lighthouse */
+.lighter::after {
+  /* width: 460px; */
+  /* height: 450px; */
+
+  clip-path: polygon(50% 32%, 100% 21%, 100% 50%, 50% 38%);
+
+  /* background: #ffffff; */
+
+  transform-origin: center;
+  animation: rotateY 10s linear infinite;
+
+  position: absolute;
+  content: "";
+}
+
+.lighter::before {
+  /* width: 450px; */
+  /* height: 450px; */
+
+  /* background: #ffffff; */
+
+  animation: flash 10s linear infinite;
+
+  position: absolute;
+  content: "";
+  inset: 0;
+  z-index: 20;
+}
+
+@keyframes flash {
+  0%,
+  7%,
+  15% {
+    opacity: 0;
+  }
+  23% {
+    /* 4 */
+    opacity: 0.9;
+  }
+  26% {
+    opacity: 1;
+  }
+  /* 5 */
+  30% {
+    opacity: 0.9;
+  }
+  38%,
+  46%,
+  53%,
+  61%,
+  69% {
+    opacity: 0;
+  }
+  76% {
+    /* 5 */
+    opacity: 0.9;
+  }
+  80% {
+    opacity: 1;
+  }
+  84% {
+    /* 4 */
+    opacity: 0.9;
+  }
+  92%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Tạo hiệu ứng xoay */
+@keyframes rotateY {
+  0% {
+    /* 1 */
+    clip-path: polygon(50% 32%, 100% 21%, 100% 50%, 50% 38%);
+  }
+  7% {
+    /* 2 */
+    clip-path: polygon(50% 32%, 100% 0%, 100% 100%, 50% 38%);
+  }
+  14% {
+    /* 3 */
+    clip-path: polygon(50% 32%, 85% 0%, 85% 100%, 50% 38%);
+  }
+  21% {
+    /* 4 */
+    clip-path: polygon(50% 32%, 68% 0%, 68% 100%, 50% 38%);
+  }
+  28% {
+    /* 5 */
+    clip-path: polygon(50% 32%, 33.75% 0%, 33.75% 100%, 50% 38%);
+  }
+  35% {
+    /* 6 */
+    clip-path: polygon(50% 32%, 16% 0%, 16.25% 100%, 50% 38%);
+  }
+  42% {
+    /* 7 */
+    clip-path: polygon(50% 32%, 0% 0%, 0% 100%, 50% 38%);
+  }
+  50% {
+    /* 8 */
+    clip-path: polygon(50% 32%, 0% 21%, 0% 55%, 50% 38%);
+  }
+  57% {
+    /* 7 */
+    clip-path: polygon(50% 32%, 0% 0%, 0% 100%, 50% 38%);
+  }
+  64% {
+    /* 6 */
+    clip-path: polygon(50% 32%, 16% 0%, 16.25% 100%, 50% 38%);
+  }
+  71% {
+    /* 5 */
+    clip-path: polygon(50% 32%, 33.75% 0%, 33.75% 100%, 50% 38%);
+  }
+  78% {
+    /* 4 */
+    clip-path: polygon(50% 32%, 68% 0%, 68% 100%, 50% 38%);
+  }
+  85% {
+    /* 3 */
+    clip-path: polygon(50% 32%, 85% 0%, 85% 100%, 50% 38%);
+  }
+  92% {
+    /* 2 */
+    clip-path: polygon(50% 32%, 100% 0%, 100% 100%, 50% 38%);
+  }
+  100% {
+    /* 1 */
+    clip-path: polygon(50% 32%, 100% 21%, 100% 50%, 50% 38%);
+  }
+}
+/* ánh sáng từ lighthouse */
+
+.Cut-Film-Reel {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 50% 50%, 50% 0%);
+}
+
+* {
+  /* outline: 1px solid red; */
+}
