@@ -2,7 +2,7 @@ import { About } from "./Pages/About";
 import { Contact } from "./Pages/Contact";
 import { Home } from "./Pages/Home";
 import { NoPage } from "./Pages/NoPage";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { Project } from "./Pages/Project";
 import { Service } from "./Pages/Service";
 import { AppProvider } from "./AppContext";
@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <AppProvider>
-        <BrowserRouter>
+        <Router>
           <Routes>
             <Route index element={<Home />} />
             <Route path="/home" element={<Home />} />
@@ -21,7 +21,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NoPage />} />
           </Routes>
-        </BrowserRouter>
+        </Router>
       </AppProvider>
     </>
   );
