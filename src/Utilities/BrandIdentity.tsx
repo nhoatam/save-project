@@ -12,7 +12,7 @@ export const BrandIdentity = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false }); // Trigger animation once when in view
 
-  const isBreakPointMobile = useMediaQuery({ query: "(max-width: 425px)" });
+  const isBreakPointMobile = useMediaQuery({ query: "(max-width: 1024px)" });
 
   return (
     <>

@@ -12,6 +12,7 @@ import { motion } from "framer-motion";
 import { AnimationPulseOut } from "../Utilities/AnimationPulseOut";
 import SocialMediaIcons from "../Utilities/SocialMediaIcons";
 import FloatingContactButton from "../Utilities/FloatingContactButton";
+import { IconAngle } from "../Constants/icons";
 
 interface ListCustomer {
   id: number;
@@ -200,46 +201,24 @@ export const Project = () => {
             <div className="flex justify-between pb-4 pt-4">
               <div className="flex items-center">
                 {/* Button Slider */}
-                <svg
+                <IconAngle
                   onClick={prevSlide}
-                  className={`size-10 rounded-full bg-[#ef5a21] text-white ${
+                  className={`size-10 origin-center -scale-x-100 transform rounded-full bg-[#ef5a21] p-2 ${
                     currentIndex === 0 ? "pointer-events-none opacity-0" : ""
                   }`}
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="m15 19-7-7 7-7"
-                  />
-                </svg>
+                  color="#FFFFFF"
+                />
                 {/* Button Slider */}
                 {/* Button Slider */}
-                <svg
+                <IconAngle
                   onClick={nextSlide}
-                  className={`size-10 rounded-full bg-[#ef5a21] text-white ${
+                  className={`size-10 rounded-full bg-[#ef5a21] p-2 ${
                     currentIndex === slides.length - 1
                       ? "pointer-events-none opacity-0"
                       : ""
                   }`}
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="m9 5 7 7-7 7"
-                  />
-                </svg>
+                  color="#FFFFFF"
+                />
                 {/* Button Slider */}
               </div>
               <div>
@@ -252,21 +231,10 @@ export const Project = () => {
                     <span className="translate-x-[-10px] text-lg">
                       Xem nhiều hơn
                     </span>
-                    <svg
-                      className="absolute right-2 size-8 text-white"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="m9 5 7 7-7 7"
-                      />
-                    </svg>
+                    <IconAngle
+                      className="absolute right-4 h-5 w-5"
+                      color="#FFFFFF"
+                    />
                   </button>
                 </a>
               </div>
@@ -446,21 +414,10 @@ export const Project = () => {
             >
               <button className="relative flex cursor-pointer items-center justify-between rounded-full bg-[#ef5a21] px-8 py-2 font-GilroyBold text-white">
                 <span className="translate-x-[-10px]">Xem nhiều hơn</span>
-                <svg
-                  className="absolute right-4 h-5 w-5 text-white"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="m9 5 7 7-7 7"
-                  />
-                </svg>
+                <IconAngle
+                  className="absolute right-4 h-5 w-5"
+                  color="#FFFFFF"
+                />
               </button>
             </a>
           </div>

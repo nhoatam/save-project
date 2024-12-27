@@ -248,7 +248,7 @@ export const About = () => {
           <div className="m-8">
             <div className="mb-10">
               <h1
-                className={`font-GilroyBold ${colorTextOrange} ${textHeaderPage}`}
+                className={`font-GilroyBold ${colorTextBlack} ${textHeaderPage}`}
               >
                 Thành tích
               </h1>

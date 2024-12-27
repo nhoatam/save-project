@@ -79,7 +79,7 @@ export const BrandName: React.FC = () => {
           >
             <div
               id={obj.name}
-              className={`flex cursor-pointer items-center justify-center border border-[#ea580c] ${sizeBrandName} ${obj.style} shadow-2xl ${
+              className={`flex cursor-pointer items-center justify-center border ${sizeBrandName} ${obj.style} shadow-2xl ${
                 revealedText === obj.name ? "bg-orange-600" : "bg-white"
               }`}
               onClick={() => handleInteraction(obj.name)}

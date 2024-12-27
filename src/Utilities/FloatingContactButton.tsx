@@ -1,7 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import iconPhone from "../assets/pictures/icon-phone.png";
-import iconZalo from "../assets/pictures/icon-zalo.png";
-import iconArrowUp from "../assets/pictures/icon-arrow-up.png";
+import { IconAngleUp, IconPhoneCall, IconZalo } from "../Constants/icons";
 const phoneNumber = "+84773333829";
 
 const FloatingContactButton: React.FC = () => {
@@ -40,7 +38,7 @@ const FloatingContactButton: React.FC = () => {
         title="Mở menu liên hệ"
         style={{ width: "40px", height: "40px" }}
       >
-        <img src={iconArrowUp} alt="" className="size-10" />
+        <IconAngleUp className="size-10" />
       </button>
 
       {/* Các icon liên hệ xổ lên khi mở */}
@@ -52,7 +50,7 @@ const FloatingContactButton: React.FC = () => {
             title="Gọi điện"
             style={{ width: "48px", height: "48px" }} // Thay đổi theo kích thước ảnh
           >
-            <img src={iconPhone} className="size-12" alt="" />
+            <IconPhoneCall className="size-12" />
           </a>
 
           <a
@@ -63,7 +61,7 @@ const FloatingContactButton: React.FC = () => {
             title="Liên hệ Zalo"
             style={{ width: "48px", height: "48px" }} // Thay đổi theo kích thước ảnh
           >
-            <img src={iconZalo} className="size-12" alt="" />
+            <IconZalo className="size-12" />
           </a>
         </div>
       )}

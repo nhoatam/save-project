@@ -40,7 +40,7 @@ export const Contact = () => {
   }, [zoom]);
   // Zoom Out
 
-  const isBreakPointMobile = useMediaQuery({ query: "(max-width: 425px)" });
+  const isBreakPointMobile = useMediaQuery({ query: "(max-width: 1024px)" });
 
   return (
     <>

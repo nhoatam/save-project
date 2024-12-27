@@ -6,10 +6,9 @@ import {
   colorTextGrey,
   space_X_NavBar,
 } from "../Constants/styles";
-import MainLogo from "../assets/pictures/MainLogo.png";
-import smalIconSave from "../assets/pictures/smal-icon-save.png";
 import { useMediaQuery } from "react-responsive";
 import { useState, useEffect } from "react";
+import { IconClose, IconMainLogo, IconMenuLogo } from "../Constants/icons";
 
 export const Header = () => {
   const [isMenuVisible, setMenuVisible] = useState<boolean | null>(false);
@@ -39,20 +38,13 @@ export const Header = () => {
       {isBreakPointMobile && (
         <>
           <div className="relative ml-4 mr-4 flex h-[60px] items-end justify-between">
-            <img
-              src={MainLogo}
-              alt="main logo save"
+            <IconMainLogo
               className={`${sizeMainLogo}`}
-              onClick={() => {
-                handleClickLink("/");
-              }}
+              onClick={() => handleClickLink("/")}
             />
-
             {/* Menu */}
-            <img
-              src={smalIconSave}
+            <IconMenuLogo
               className={`${sizeSmallSizeIcon} cursor-pointer`}
-              alt="small Icon Save"
               onClick={() => {
                 setMenuVisible(!isMenuVisible);
               }}
@@ -117,12 +109,11 @@ export const Header = () => {
                     Liên hệ
                   </Link>
                 </ul>
-                <button
-                  className="mt-16 rounded-full bg-[#000000] px-4 py-2 text-xl text-white hover:bg-red-600"
+                <IconClose
                   onClick={() => setMenuVisible(false)}
-                >
-                  Close Menu
-                </button>
+                  className="absolute right-[calc(0px+20px)] top-[calc(0px+20px)] size-12 rounded-full bg-[#000000] p-2 hover:bg-red-600"
+                  color="#FFFFFF"
+                />
               </div>
             </div>
           )}
@@ -132,13 +123,9 @@ export const Header = () => {
       {!isBreakPointMobile && (
         <div className="ml-20 mr-20 grid grid-cols-2">
           <div className="place-content-end">
-            <img
-              src={MainLogo}
-              alt="main logo save"
+            <IconMainLogo
               className={`${sizeMainLogo}`}
-              onClick={() => {
-                handleClickLink("/");
-              }}
+              onClick={() => handleClickLink("/")}
             />
           </div>
           <div
@@ -160,11 +147,7 @@ export const Header = () => {
                 Liên hệ
               </Link>
             </ul>
-            <img
-              src={smalIconSave}
-              className={`${sizeSmallSizeIcon}`}
-              alt="small Icon Save"
-            />
+            <IconMenuLogo className={`${sizeSmallSizeIcon}`} />
           </div>
         </div>
       )}

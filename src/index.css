@@ -67,19 +67,19 @@
 
 /* Animation classes */
 .animate-slide-S {
-  animation: slide-down-left 2s ease-out forwards;
+  animation: slide-down-left 1s ease-out forwards;
 }
 
 .animate-slide-V {
-  animation: slide-up-left 2s ease-out forwards;
+  animation: slide-up-left 1s ease-out forwards;
 }
 
 .animate-slide-A {
-  animation: slide-down-right 2s ease-out forwards;
+  animation: slide-down-right 1s ease-out forwards;
 }
 
 .animate-slide-E {
-  animation: slide-up-right 2s ease-out forwards;
+  animation: slide-up-right 1s ease-out forwards;
 }
 /* Animation classes */
 

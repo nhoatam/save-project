@@ -9,7 +9,7 @@ import {
 } from "../Constants/styles";
 
 export const LightHouse = () => {
-  const isBreakPointMobile = useMediaQuery({ query: "(max-width: 425px)" });
+  const isBreakPointMobile = useMediaQuery({ query: "(max-width: 1024px)" });
   return (
     <>
       <div className="relative">

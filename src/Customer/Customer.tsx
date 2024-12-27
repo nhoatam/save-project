@@ -10,6 +10,7 @@ import customer6 from "../assets/pictures/customer6.png";
 import customer7 from "../assets/pictures/customer7.png";
 import customer8 from "../assets/pictures/customer8.png";
 import { useMediaQuery } from "react-responsive";
+import { IconAngle } from "../Constants/icons";
 
 interface ListCustomer {
   id: number;
@@ -79,24 +80,12 @@ export const Customer = () => {
       {!isBreakPointMobile && (
         <div className="flex select-none items-center justify-center gap-8">
           {/* Button Slider */}
-          <svg
+          <IconAngle
             onClick={prevSlide}
-            className={`${sizeAngle} text-[#77787a] ${
+            className={`origin-center -scale-x-100 transform ${sizeAngle} ${
               currentIndex === 0 ? "pointer-events-none opacity-0" : ""
             }`}
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="m15 19-7-7 7-7"
-            />
-          </svg>
+          />
           {/* Button Slider */}
 
           {/* Slider */}
@@ -114,36 +103,29 @@ export const Customer = () => {
             }}
           >
             {slides[currentIndex].content.map((ct) => (
-              <div
-                className={`${sizePicCustomer} place-content-center place-items-center bg-[#e6e6e6]`}
-              >
-                <img src={ct} alt="our customer" className="h-2/3 w-2/3" />
-              </div>
+              // <div
+              //   className={`${sizePicCustomer} place-content-center place-items-center bg-[#e6e6e6]`}
+              // >
+              //   <img src={ct} alt="our customer" className="h-2/3 w-2/3" />
+              // </div>
+              <img
+                src={ct}
+                alt="our customer"
+                className={`${sizePicCustomer}`}
+              />
             ))}
           </motion.div>
           {/* Slider */}
 
           {/* Button Slider */}
-          <svg
+          <IconAngle
             onClick={nextSlide}
-            className={`${sizeAngle} text-[#77787a] ${
+            className={`${sizeAngle} ${
               currentIndex === slides.length - 1
                 ? "pointer-events-none opacity-0"
                 : ""
             }`}
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="m9 5 7 7-7 7"
-            />
-          </svg>
+          />
           {/* Button Slider */}
         </div>
       )}

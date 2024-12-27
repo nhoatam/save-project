@@ -20,10 +20,10 @@ import { Footer } from "../Utilities/Footer";
 import { Header } from "../Utilities/Header";
 import { ListProjects } from "../Utilities/ListProjects";
 import { ListServices } from "../Utilities/ListServices";
-import bigIconSave from "../assets/pictures/big-icon-save.png";
 import { AnimationPulseIn } from "../Utilities/AnimationPulseIn";
 import { useState, useEffect } from "react";
 import FloatingContactButton from "../Utilities/FloatingContactButton";
+import { IconAngle, IconArrowDown, IconMenuLogo } from "../Constants/icons";
 
 export const Home = () => {
   // Zoom Out
@@ -156,9 +156,7 @@ export const Home = () => {
                 <div className="flex items-center justify-center">
                   <div className="pulseIn h-[160px] w-[160px]">
                     <AnimationPulseIn />
-                    <img
-                      src={bigIconSave}
-                      alt="big icon save"
+                    <IconMenuLogo
                       className={`${sizeBigSizeIcon} ${positionBigIcon}`}
                     />
                   </div>
@@ -166,20 +164,9 @@ export const Home = () => {
               </div>
 
               <div className="flex items-end justify-end">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="#f06225"
+                <IconArrowDown
                   className={`mb-5 mr-40 ${sizeArrowDown} animate-bounce`}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3"
-                  />
-                </svg>
+                />
               </div>
             </div>
             <div className="grid h-screen grid-cols-2 bg-[#f1f1f1]">
@@ -245,21 +232,7 @@ export const Home = () => {
                   className={`flex cursor-pointer font-GilroyRegular ${colorTextGrey} ${textStory} items-center space-x-2 font-GilroyRegular text-lg text-[#77787a]`}
                 >
                   <span className="">Xem nhiều hơn</span>
-                  <svg
-                    className={`${sizeAngle} cursor-pointer text-[#77787a]`}
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="m9 5 7 7-7 7"
-                    />
-                  </svg>
+                  <IconAngle className={sizeAngle} color="#77787b" />
                 </span>
               </div>
               <div className="col-span-4 flex items-center justify-center gap-10">

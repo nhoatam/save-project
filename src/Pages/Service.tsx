@@ -234,10 +234,7 @@ export const Service = () => {
               </div>
 
               <div className="grid h-screen grid-cols-2 gap-10 bg-[#f3f3f3] bg-opacity-50">
-                <div className="flex items-center justify-center">
-                  <BrandIdentity />
-                </div>
-                <div className={`mr-20 place-content-center space-y-8`}>
+                <div className={`ml-20 place-content-center space-y-8`}>
                   <h1
                     className={`font-GilroyBold ${colorTextOrange} ${textHeaderPage}`}
                   >
@@ -263,11 +260,17 @@ export const Service = () => {
                     <li>Thiết kế Sales Kit</li>
                   </ul>
                 </div>
+                <div className="mr-20 flex items-center justify-center">
+                  <BrandIdentity />
+                </div>
               </div>
             </div>
 
             <div className="grid h-screen grid-cols-2 gap-10">
-              <div className="ml-20 place-content-center space-y-8">
+              <div className="ml-20 grid place-content-center place-items-center">
+                <LightHouse />
+              </div>
+              <div className="mr-20 place-content-center space-y-8">
                 <h1
                   className={`font-GilroyBold ${colorTextOrange} ${textHeaderPage}`}
                 >
@@ -290,16 +293,10 @@ export const Service = () => {
                   <li>Triển khai SEO website on top google.</li>
                 </ul>
               </div>
-              <div className="mr-20 grid place-content-center place-items-center">
-                <LightHouse />
-              </div>
             </div>
 
             <div className="grid h-screen grid-cols-2 gap-10 bg-[#f1f1f1]">
-              <div className="ml-20 flex items-center justify-center">
-                <EndProductUIUX />
-              </div>
-              <div className="mr-20 place-content-center space-y-8">
+              <div className="ml-20 place-content-center space-y-8">
                 <h1
                   className={`font-GilroyBold ${colorTextOrange} ${textHeaderPage}`}
                 >
@@ -323,6 +320,9 @@ export const Service = () => {
                   <li>Thiết kế website bán hàng</li>
                   <li>Thiết kế landing page bán hàng</li>
                 </ul>
+              </div>
+              <div className="mr-20 flex items-center justify-center">
+                <EndProductUIUX />
               </div>
             </div>
 
