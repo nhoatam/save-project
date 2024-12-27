@@ -209,14 +209,9 @@
   50% {
     opacity: 1;
   }
-  /* 100% {
-    width: 70vw;
-    height: 70vw;
-    opacity: 0;
-  } */
   100% {
-    width: 100vw;
-    height: 100vw;
+    width: 90vw;
+    height: 90vw;
     opacity: 0;
   }
 }

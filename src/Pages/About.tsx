@@ -32,6 +32,7 @@ import { AnimationPulseOut } from "../Utilities/AnimationPulseOut";
 import { useState, useEffect } from "react";
 import SocialMediaIcons from "../Utilities/SocialMediaIcons";
 import FloatingContactButton from "../Utilities/FloatingContactButton";
+import { IconQuote } from "../Constants/icons";
 
 interface DefineSave {
   symbol: string;
@@ -246,7 +247,7 @@ export const About = () => {
           </div>
 
           <div className="m-8">
-            <div className="mb-10">
+            <div className="relative mb-10">
               <h1
                 className={`font-GilroyBold ${colorTextBlack} ${textHeaderPage}`}
               >
@@ -258,6 +259,11 @@ export const About = () => {
                 Save không ngừng nỗ lực mở rộng và phát triển. Trong thời gian
                 qua, chúng tôi đã có những con số ấn tượng.
               </p>
+              <IconQuote
+                className="absolute bottom-[calc(0px-40px)] right-[calc(0px+40px)] size-20"
+                gradientStart="#ffffff"
+                gradientEnd="#9f9d9d"
+              />
             </div>
             <Achievement />
           </div>
@@ -267,7 +273,7 @@ export const About = () => {
               <h1
                 className={`mb-8 font-GilroyBold ${colorTextOrange} ${textHeaderPage}`}
               >
-                Đội ngữ
+                Đội ngũ
               </h1>
               <Staff />
             </div>
@@ -469,14 +475,23 @@ export const About = () => {
                 </h1>
               </div>
               <div className="place-content-center">
-                <p
-                  className={`font-GilroyBold ${colorTextBlack} ${sizeTextAchievement}`}
-                >
-                  Save không ngừng nỗ lực mở
-                  <span className="block">rộng và phát triển.</span>
-                  <span className="block">Trong thời gian qua, chúng tôi</span>
-                  <span className="block">đã có những con số ấn tượng.</span>
-                </p>
+                <div className="relative w-fit">
+                  <p
+                    className={`font-GilroyBold ${colorTextBlack} ${sizeTextAchievement}`}
+                  >
+                    Save không ngừng nỗ lực mở
+                    <span className="block">rộng và phát triển.</span>
+                    <span className="block">
+                      Trong thời gian qua, chúng tôi
+                    </span>
+                    <span className="block">đã có những con số ấn tượng.</span>
+                  </p>
+                  <IconQuote
+                    className="absolute bottom-[calc(0px-80px)] right-[calc(0px-40px)] -z-10 size-40"
+                    gradientStart="#ffffff"
+                    gradientEnd="#9f9d9d"
+                  />
+                </div>
               </div>
               <div className="place-content-center">
                 <Achievement />
@@ -488,7 +503,7 @@ export const About = () => {
               <h1
                 className={`ml-20 place-content-end font-GilroyBold ${colorTextOrange} ${textHeaderPage}`}
               >
-                Đội ngữ
+                Đội ngũ
               </h1>
               <div className="flex items-center justify-center gap-10">
                 <Staff />

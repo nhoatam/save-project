@@ -111,7 +111,7 @@ export const Header = () => {
                 </ul>
                 <IconClose
                   onClick={() => setMenuVisible(false)}
-                  className="absolute right-[calc(0px+20px)] top-[calc(0px+20px)] size-12 rounded-full bg-[#000000] p-2 hover:bg-red-600"
+                  className="absolute right-[calc(0px+20px)] top-[calc(0px+20px)] size-12 rounded-full p-2 hover:bg-red-600"
                   color="#FFFFFF"
                 />
               </div>

@@ -11,7 +11,7 @@ import { useMediaQuery } from "react-responsive";
 
 let customerNum = 150;
 let memberNum = 15;
-let productNum = 300;
+let productNum = 500;
 let client = 80;
 
 export const Achievement = () => {

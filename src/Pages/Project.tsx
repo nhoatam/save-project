@@ -412,7 +412,7 @@ export const Project = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="relative flex cursor-pointer items-center justify-between rounded-full bg-[#ef5a21] px-8 py-2 font-GilroyBold text-white">
+              <button className="relative flex cursor-pointer items-center justify-between rounded-full bg-[#ef5a21] px-8 py-2 font-GilroyBold text-white hover:bg-orange-500">
                 <span className="translate-x-[-10px]">Xem nhiều hơn</span>
                 <IconAngle
                   className="absolute right-4 h-5 w-5"

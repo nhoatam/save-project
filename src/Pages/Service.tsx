@@ -16,6 +16,7 @@ import { useState, useEffect } from "react";
 import { AnimationPulseOut } from "../Utilities/AnimationPulseOut";
 import SocialMediaIcons from "../Utilities/SocialMediaIcons";
 import FloatingContactButton from "../Utilities/FloatingContactButton";
+import { useLocation, useNavigationType } from "react-router-dom";
 
 export const Service = () => {
   // Zoom Out
@@ -39,6 +40,21 @@ export const Service = () => {
     };
   }, [zoom]);
   // Zoom Out
+
+  const location = useLocation();
+  const navigationType = useNavigationType(); // Kiểm tra loại điều hướng
+  useEffect(() => {
+    if (navigationType === "PUSH") {
+      // Chỉ cuộn khi điều hướng từ trang khác
+      const hash = location.hash;
+      if (hash) {
+        const targetElement = document.getElementById(hash.substring(1));
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    }
+  }, [location, navigationType]);
 
   const isBreakPointMobile = useMediaQuery({ query: "(max-width: 1024px)" });
 
@@ -73,7 +89,11 @@ export const Service = () => {
           </div>
           {/* hiệu ứng lan tỏa */}
 
-          <div className="m-4 space-y-4 rounded-xl bg-[#f1f1f1] px-4 pb-12 pt-10">
+          {/* brand identity */}
+          <div
+            id="brand-identity"
+            className="m-4 space-y-4 rounded-xl bg-[#f1f1f1] px-4 pb-12 pt-10"
+          >
             <h1
               className={`font-GilroyBold ${colorTextOrange} ${textHeaderPage}`}
             >
@@ -102,8 +122,13 @@ export const Service = () => {
               <li>Thiết kế Sales Kit</li>
             </ul>
           </div>
+          {/* brand identity */}
 
-          <div className="m-4 space-y-4 rounded-xl bg-[#f1f1f1] px-4 pb-12 pt-10">
+          {/* digital marketing */}
+          <div
+            id="digital-marketing"
+            className="m-4 space-y-4 rounded-xl bg-[#f1f1f1] px-4 pb-12 pt-10"
+          >
             <h1
               className={`font-GilroyBold ${colorTextOrange} ${textHeaderPage}`}
             >
@@ -129,8 +154,13 @@ export const Service = () => {
               <li>Triển khai SEO website on top google.</li>
             </ul>
           </div>
+          {/* digital marketing */}
 
-          <div className="m-4 space-y-4 rounded-xl bg-[#f1f1f1] px-4 pb-12 pt-10">
+          {/* website */}
+          <div
+            id="website"
+            className="m-4 space-y-4 rounded-xl bg-[#f1f1f1] px-4 pb-12 pt-10"
+          >
             <h1
               className={`font-GilroyBold ${colorTextOrange} ${textHeaderPage}`}
             >
@@ -157,8 +187,13 @@ export const Service = () => {
               <li>Thiết kế landing page bán hàng</li>
             </ul>
           </div>
+          {/* website */}
 
-          <div className="m-4 space-y-4 rounded-xl bg-[#f1f1f1] px-4 pb-12 pt-10">
+          {/* film product */}
+          <div
+            id="film-product"
+            className="m-4 space-y-4 rounded-xl bg-[#f1f1f1] px-4 pb-12 pt-10"
+          >
             <h1
               className={`font-GilroyBold ${colorTextOrange} ${textHeaderPage}`}
             >
@@ -183,6 +218,8 @@ export const Service = () => {
               <li>Tour 360 độ dự án</li>
             </ul>
           </div>
+          {/* film product */}
+
           <Footer />
         </div>
       )}

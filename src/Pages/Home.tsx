@@ -14,7 +14,7 @@ import {
   textSlogan,
   textStory,
 } from "../Constants/styles";
-import { Customer } from "../Customer/Customer";
+import { Customer } from "../Utilities/Customer";
 import { BrandName } from "../Utilities/BrandName";
 import { Footer } from "../Utilities/Footer";
 import { Header } from "../Utilities/Header";
@@ -23,7 +23,12 @@ import { ListServices } from "../Utilities/ListServices";
 import { AnimationPulseIn } from "../Utilities/AnimationPulseIn";
 import { useState, useEffect } from "react";
 import FloatingContactButton from "../Utilities/FloatingContactButton";
-import { IconAngle, IconArrowDown, IconMenuLogo } from "../Constants/icons";
+import {
+  IconAngle,
+  IconArrowDown,
+  IconMenuLogo,
+  IconQuote,
+} from "../Constants/icons";
 
 export const Home = () => {
   // Zoom Out
@@ -82,6 +87,11 @@ export const Home = () => {
                 <AnimationPulseIn />
               </div>
             </div>
+            <IconQuote
+              className="absolute bottom-[calc(0px-0px)] right-[calc(0px-0px)] -z-10 size-16"
+              gradientStart="#ffffff"
+              gradientEnd="#9f9d9d"
+            />
           </div>
           <div className="flex h-fit items-center justify-center bg-[#f1f1f1] p-10">
             <BrandName />
@@ -171,7 +181,7 @@ export const Home = () => {
             </div>
             <div className="grid h-screen grid-cols-2 bg-[#f1f1f1]">
               <div className="flex items-center justify-center">
-                <div className="relative w-4/6 space-y-4">
+                <div className="relative z-0 w-4/6 space-y-4">
                   <p
                     className={`text-justify font-GilroyRegular ${colorTextGrey} ${textMeanSave}`}
                   >
@@ -187,6 +197,11 @@ export const Home = () => {
                     hiện cho suy nghĩ nội tại mạnh mẽ mà Save luôn nỗ lực tạo ra
                     những giá trị khác biệt của thương hiệu.
                   </p>
+                  <IconQuote
+                    className="absolute bottom-[calc(0px-110px)] right-[calc(0px-30px)] -z-10 size-52"
+                    gradientStart="#ffffff"
+                    gradientEnd="#9f9d9d"
+                  />
                 </div>
               </div>
 
@@ -229,7 +244,7 @@ export const Home = () => {
                       "_blank",
                     )
                   }
-                  className={`flex cursor-pointer font-GilroyRegular ${colorTextGrey} ${textStory} items-center space-x-2 font-GilroyRegular text-lg text-[#77787a]`}
+                  className={`flex cursor-pointer font-GilroyRegular hover:text-orange-500 ${colorTextGrey} ${textStory} items-center space-x-2 font-GilroyRegular text-lg text-[#77787a]`}
                 >
                   <span className="">Xem nhiều hơn</span>
                   <IconAngle className={sizeAngle} color="#77787b" />

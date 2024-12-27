@@ -556,3 +556,45 @@ export const IconClose = ({
     />
   </svg>
 );
+
+export const IconQuote = ({
+  className,
+  color = "#000", // Default màu đen
+  gradientStart, // Không có giá trị mặc định
+  gradientEnd, // Không có giá trị mặc định
+}: {
+  className?: string;
+  color?: string;
+  gradientStart?: string;
+  gradientEnd?: string;
+}) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 250.7 205.4"
+    className={className}
+  >
+    <defs>
+      {gradientStart &&
+        gradientEnd && ( // Chỉ định nghĩa gradient nếu có giá trị
+          <linearGradient
+            id="linear-gradient"
+            x1="102.67"
+            y1="53.72"
+            x2="206.97"
+            y2="229.77"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0" stopColor={gradientStart} />
+            <stop offset="1" stopColor={gradientEnd} />
+          </linearGradient>
+        )}
+    </defs>
+    <g id="Layer_3" data-name="Layer 3" opacity="0.5">
+      <path
+        fill={gradientStart && gradientEnd ? "url(#linear-gradient)" : color} // Ưu tiên gradient
+        d="M203.12,205.4H156.77l28.43-98.79H144.09V0H250.7V94.71l-.09.2Zm-43.65-2h42.31L248.66,94.3V2H146.12V104.57H187.9ZM59,205.4H12.68l28.43-98.79H0V0H106.61V94.71l-.09.2Zm-43.65-2H57.69L104.57,94.3V2H2V104.57H43.81Z"
+      />
+    </g>
+  </svg>
+);

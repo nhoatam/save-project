@@ -27,10 +27,10 @@ export const BrandIdentity = () => {
               ease: "easeOut",
               delay: isInView ? 0.8 : 0,
             }} // Thời gian animation và easing
-            className={`absolute ${sizeCircleBig} place-items-center rounded-full bg-[#fddcc5]`}
+            className={`absolute ${sizeCircleBig} rounded-full bg-[#fddcc5]`}
           >
             <p
-              className={`pt-6 font-GilroyRegular ${sizeTextBrandIdentity} text-[#f05a21]`}
+              className={`pt-6 text-center font-GilroyRegular ${sizeTextBrandIdentity} text-[#f05a21]`}
             >
               Your Brand
             </p>
@@ -63,10 +63,10 @@ export const BrandIdentity = () => {
               ease: "easeOut",
               delay: isInView ? 2.4 : 0,
             }}
-            className={`absolute ${sizeCircleSmall} place-content-center place-items-center rounded-full bg-[#f05a21]`}
+            className={`absolute place-content-center ${sizeCircleSmall} rounded-full bg-[#f05a21]`}
           >
             <p
-              className={`font-GilroyRegular ${sizeTextBrandIdentity} text-white`}
+              className={`text-center font-GilroyRegular ${sizeTextBrandIdentity} text-white`}
             >
               Logo
             </p>

@@ -80,7 +80,7 @@ export const Staff: React.FC = () => {
                   <img
                     src={picStaff}
                     alt="staff-role"
-                    className={`${sizePicListStaff} rounded-3xl object-cover shadow-2xl`}
+                    className={`${sizePicListStaff} rounded-xl object-cover shadow-2xl`}
                   />
                 )}
                 <motion.figcaption className="m-2">
@@ -97,7 +97,7 @@ export const Staff: React.FC = () => {
                   <img
                     src={picStaff}
                     alt="staff-role"
-                    className={`${sizePicListStaff} rounded-3xl object-cover shadow-2xl`}
+                    className={`${sizePicListStaff} rounded-xl object-cover shadow-2xl`}
                   />
                 )}
               </motion.figure>
@@ -120,7 +120,7 @@ export const Staff: React.FC = () => {
                 <img
                   src={picStaff}
                   alt="staff-role"
-                  className="mb-4 h-full w-full rounded-3xl object-cover shadow-2xl"
+                  className="mb-4 h-full w-full rounded-xl object-cover shadow-2xl"
                 />
               )}
               <motion.figcaption className="">
@@ -137,7 +137,7 @@ export const Staff: React.FC = () => {
                 <img
                   src={picStaff}
                   alt="staff-role"
-                  className="mt-4 h-full w-full rounded-3xl object-cover shadow-2xl"
+                  className="mt-4 h-full w-full rounded-xl object-cover shadow-2xl"
                 />
               )}
             </motion.figure>

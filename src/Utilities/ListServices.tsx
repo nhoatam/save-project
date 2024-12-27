@@ -5,10 +5,13 @@ import {
   textHeaderListService,
   textListService,
 } from "../Constants/styles";
+import { IconAngle } from "../Constants/icons";
+import { useNavigate } from "react-router-dom";
 
 interface ServiceProps {
   title: string;
   support: string[];
+  targetSelection: string;
 }
 
 const serviceList: ServiceProps[] = [
@@ -20,6 +23,7 @@ const serviceList: ServiceProps[] = [
       "Tối ưu performance ads đa nền tảng",
       "SEO website on top google",
     ],
+    targetSelection: "digital-marketing",
   },
   {
     title: "Tư vấn thiết kế thương hiệu",
@@ -31,6 +35,7 @@ const serviceList: ServiceProps[] = [
       "Thiết kế Brochure",
       "Thiết kế Sales Kit",
     ],
+    targetSelection: "brand-identity",
   },
   {
     title: "Thiết kế Website chuẩn SEO",
@@ -39,6 +44,7 @@ const serviceList: ServiceProps[] = [
       "Thiết kế website bán hàng",
       "Thiết kế landing page bán hàng, dự án Bất động sản",
     ],
+    targetSelection: "website",
   },
   {
     title: "Sản xuất phim quảng cáo",
@@ -48,18 +54,21 @@ const serviceList: ServiceProps[] = [
       "Sản xuất Phim Viral",
       "Tour 360 độ dự án",
     ],
+    targetSelection: "film-product",
   },
 ];
 
 export const ListServices: React.FC = () => {
   const isBreakPointMobile = useMediaQuery({ query: "(max-width: 1024px)" });
+  const navigate = useNavigate();
+
   return (
     <>
       {isBreakPointMobile && (
         <>
           {serviceList.map((obj) => (
-            <div className="mb-2 rounded-lg bg-[#ef5a21] text-white">
-              <div className={`p-4 ${sizeListService}`}>
+            <div className="relative mb-2 rounded-lg bg-[#ef5a21] text-white">
+              <div className={`p-4 ${sizeListService} `}>
                 <h3
                   className={`font-GilroyMedium ${textHeaderListService} text-balance`}
                 >
@@ -73,6 +82,11 @@ export const ListServices: React.FC = () => {
                   ))}
                 </ul>
               </div>
+              <IconAngle
+                color="#FFFFFF"
+                className="absolute right-[calc(0px+10px)] top-1/2 size-6 -translate-y-1/2 cursor-pointer"
+                onClick={() => navigate(`/service#${obj.targetSelection}`)}
+              />
             </div>
           ))}
         </>
