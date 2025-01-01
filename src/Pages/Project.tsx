@@ -203,7 +203,7 @@ export const Project = () => {
                 {/* Button Slider */}
                 <IconAngle
                   onClick={prevSlide}
-                  className={`size-10 origin-center -scale-x-100 transform rounded-full bg-[#ef5a21] p-2 ${
+                  className={`size-11 origin-center -scale-x-100 transform rounded-full bg-[#ef5a21] p-2 ${
                     currentIndex === 0 ? "pointer-events-none opacity-0" : ""
                   }`}
                   color="#FFFFFF"
@@ -212,7 +212,7 @@ export const Project = () => {
                 {/* Button Slider */}
                 <IconAngle
                   onClick={nextSlide}
-                  className={`size-10 rounded-full bg-[#ef5a21] p-2 ${
+                  className={`size-11 rounded-full bg-[#ef5a21] p-2 ${
                     currentIndex === slides.length - 1
                       ? "pointer-events-none opacity-0"
                       : ""
