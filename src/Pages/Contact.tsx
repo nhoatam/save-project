@@ -223,11 +223,11 @@ export const Contact = () => {
                 {/* Icon chính */}
                 <button
                   onClick={() => setIsOpen(!isOpen)} // Toggle trạng thái mở/đóng
-                  className="mb-2 ml-1 flex transform items-center justify-center rounded-full shadow-lg transition-transform hover:scale-110"
+                  className="mb-2 ml-[6px] flex transform items-center justify-center rounded-full shadow-lg transition-transform hover:scale-110"
                   title="Mở menu liên hệ"
-                  style={{ width: "40px", height: "40px" }}
+                  style={{ width: "36px", height: "36px" }}
                 >
-                  <IconAngleUp className="size-10" />
+                  <IconAngleUp className="size-9" />
                 </button>
 
                 {/* Các icon liên hệ xổ lên khi mở */}
