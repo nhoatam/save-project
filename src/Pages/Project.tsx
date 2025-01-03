@@ -244,9 +244,10 @@ export const Project = () => {
           </div>
         </div>
       )}
+
       {!isBreakPointMobile && (
         <div
-          className=""
+          className="relative overflow-hidden"
           style={{
             transform: zoom < 1 ? `scale(${zoom})` : "none", // Áp dụng scale khi zoom < 1
             transformOrigin: "top center",
@@ -254,7 +255,7 @@ export const Project = () => {
             height: "100%",
           }}
         >
-          <div className="relative grid min-h-screen grid-rows-[100px,auto,100px] overflow-hidden">
+          <div className="grid min-h-screen grid-rows-[100px,auto,100px]">
             <Header />
 
             <div className="ml-20 w-4/6 place-content-center space-y-6">
@@ -274,15 +275,15 @@ export const Project = () => {
             <div className="ml-20 flex place-items-center gap-4">
               <SocialMediaIcons />
             </div>
-
-            {/* hiệu ứng lan tỏa */}
-            <div className="absolute -bottom-10 -right-10">
-              <div className="pulseOut">
-                <AnimationPulseOut />
-              </div>
-            </div>
-            {/* hiệu ứng lan tỏa */}
           </div>
+
+          {/* hiệu ứng lan tỏa */}
+          <div className="absolute -right-10">
+            <div className="pulseOut">
+              <AnimationPulseOut />
+            </div>
+          </div>
+          {/* hiệu ứng lan tỏa */}
 
           <div className="grid grid-cols-3 grid-rows-6 gap-4 p-20">
             <div className="col-span-2 row-span-2 min-h-[700px]">
