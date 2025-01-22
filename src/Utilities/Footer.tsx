@@ -44,9 +44,9 @@ export const Footer = () => {
   return (
     <>
       {isBreakPointMobile && (
-        <footer className="relative mt-10 space-y-2">
+        <footer className="relative mt-10 space-y-2 bg-[#f1f1f1]">
           <h1
-            className={`ml-4 mr-4 font-GilroyBold ${colorTextOrange} ${textHeaderPage}`}
+            className={`ml-4 mr-4 pt-10 font-GilroyBold ${colorTextOrange} ${textHeaderPage}`}
           >
             Kết nối <span className="block">với chúng tôi</span>
           </h1>
@@ -99,7 +99,7 @@ export const Footer = () => {
             <div className="relative">
               <input
                 type="text"
-                className={`w-full rounded-lg border bg-[#f1f1f1] px-4 py-1 font-GilroyRegular shadow-lg ${textInfoFooter}`}
+                className={`w-full rounded-lg border bg-white px-4 py-1 font-GilroyRegular shadow-lg ${textInfoFooter}`}
                 placeholder="Nhập email tại đây"
               />
               <IconAngle className="absolute right-[calc(0px+5px)] top-[calc(0px+4px)] size-5 text-[#b3b3b3]" />

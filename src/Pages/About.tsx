@@ -268,7 +268,7 @@ export const About = () => {
             <Achievement />
           </div>
 
-          <div className="bg-[#f1f1f1]">
+          {/* <div className="bg-[#f1f1f1]">
             <div className="p-8">
               <h1
                 className={`mb-8 font-GilroyBold ${colorTextOrange} ${textHeaderPage}`}
@@ -277,7 +277,7 @@ export const About = () => {
               </h1>
               <Staff />
             </div>
-          </div>
+          </div> */}
           <Footer />
         </div>
       )}
@@ -499,16 +499,17 @@ export const About = () => {
               <div className="col-span-2"></div>
             </div>
 
-            <div className={`grid h-screen bg-[#f3f3f3] ${gridStaff}`}>
-              <h1
+            {/* <div className={`grid h-screen bg-[#f3f3f3] ${gridStaff}`}> */}
+            <div className={`bg-[#f3f3f3]`}>
+              {/* <h1
                 className={`ml-20 place-content-end font-GilroyBold ${colorTextOrange} ${textHeaderPage}`}
               >
                 Đội ngũ
               </h1>
               <div className="flex items-center justify-center gap-10">
                 <Staff />
-              </div>
-              <div className="place-content-end">
+              </div> */}
+              <div className="place-content-end pt-10">
                 {/* <div className="relative flex justify-center">
             <hr className="absolute -top-10 h-1 w-5/6 bg-[#f1f1f1]" />
           </div> */}
