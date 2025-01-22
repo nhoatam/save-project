@@ -26,7 +26,7 @@ const slides: ListCustomer[] = [
       {
         item: (
           <iframe
-            src="https://www.behance.net/embed/project/193520737?ilo0=1"
+            src="https://www.behance.net/embed/project/217276589?ilo0=1"
             className="h-[200px] w-full"
             allowFullScreen
             frameBorder="0"
@@ -34,13 +34,12 @@ const slides: ListCustomer[] = [
             referrerPolicy="strict-origin-when-cross-origin"
           ></iframe>
         ),
-        projectName:
-          "Nhận diện thương hiệu Smart build, một trong những nhà cung cấp VLXD hàng đầu tại TPHCM.",
+        projectName: "ESG Viet Vision.",
       },
       {
         item: (
           <iframe
-            src="https://www.behance.net/embed/project/173985569?ilo0=1"
+            src="https://www.behance.net/embed/project/216239241?ilo0=1"
             className="h-[200px] w-full"
             allowFullScreen
             frameBorder="0"
@@ -48,12 +47,12 @@ const slides: ListCustomer[] = [
             referrerPolicy="strict-origin-when-cross-origin"
           ></iframe>
         ),
-        projectName: "Bộ nhận diện thương hiệu của NDV Logistic",
+        projectName: "NDV Logistic",
       },
       {
         item: (
           <iframe
-            src="https://www.behance.net/embed/project/174045019?ilo0=1"
+            src="https://www.behance.net/embed/project/216213885?ilo0=1"
             className="h-[200px] w-full"
             allowFullScreen
             frameBorder="0"
@@ -65,50 +64,50 @@ const slides: ListCustomer[] = [
       },
     ],
   },
-  {
-    id: 2,
-    content: [
-      {
-        item: (
-          <iframe
-            src="https://www.behance.net/embed/project/81732483?ilo0=1"
-            className="h-[200px] w-full"
-            allowFullScreen
-            frameBorder="0"
-            allow="clipboard-write"
-            referrerPolicy="strict-origin-when-cross-origin"
-          ></iframe>
-        ),
-        projectName: "string",
-      },
-      {
-        item: (
-          <iframe
-            src="https://www.behance.net/embed/project/81732483?ilo0=1"
-            className="h-[200px] w-full"
-            allowFullScreen
-            frameBorder="0"
-            allow="clipboard-write"
-            referrerPolicy="strict-origin-when-cross-origin"
-          ></iframe>
-        ),
-        projectName: "string",
-      },
-      {
-        item: (
-          <iframe
-            src="https://www.behance.net/embed/project/81732483?ilo0=1"
-            className="h-[200px] w-full"
-            allowFullScreen
-            frameBorder="0"
-            allow="clipboard-write"
-            referrerPolicy="strict-origin-when-cross-origin"
-          ></iframe>
-        ),
-        projectName: "string",
-      },
-    ],
-  },
+  // {
+  //   id: 2,
+  //   content: [
+  //     {
+  //       item: (
+  //         <iframe
+  //           src="https://www.behance.net/embed/project/81732483?ilo0=1"
+  //           className="h-[200px] w-full"
+  //           allowFullScreen
+  //           frameBorder="0"
+  //           allow="clipboard-write"
+  //           referrerPolicy="strict-origin-when-cross-origin"
+  //         ></iframe>
+  //       ),
+  //       projectName: "string",
+  //     },
+  //     {
+  //       item: (
+  //         <iframe
+  //           src="https://www.behance.net/embed/project/81732483?ilo0=1"
+  //           className="h-[200px] w-full"
+  //           allowFullScreen
+  //           frameBorder="0"
+  //           allow="clipboard-write"
+  //           referrerPolicy="strict-origin-when-cross-origin"
+  //         ></iframe>
+  //       ),
+  //       projectName: "string",
+  //     },
+  //     {
+  //       item: (
+  //         <iframe
+  //           src="https://www.behance.net/embed/project/81732483?ilo0=1"
+  //           className="h-[200px] w-full"
+  //           allowFullScreen
+  //           frameBorder="0"
+  //           allow="clipboard-write"
+  //           referrerPolicy="strict-origin-when-cross-origin"
+  //         ></iframe>
+  //       ),
+  //       projectName: "string",
+  //     },
+  //   ],
+  // },
 ];
 
 export const Project = () => {
@@ -223,7 +222,7 @@ export const Project = () => {
               </div>
               <div>
                 <a
-                  href="https://www.behance.net/tamnguyendesign2212/projects"
+                  href="https://www.behance.net/savethe"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -409,7 +408,7 @@ export const Project = () => {
 
           <div className="flex items-end justify-center">
             <a
-              href="https://www.behance.net/tamnguyendesign2212/projects"
+              href="https://www.behance.net/savethe"
               target="_blank"
               rel="noopener noreferrer"
             >

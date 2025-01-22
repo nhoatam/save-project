@@ -1,7 +1,8 @@
-const FACEBOOK_LINK = "https://www.facebook.com";
-const BEHANCE_LINK = "https://www.behance.net";
-const YOUTUBE_LINK = "https://www.youtube.com";
-const LINKEDIN_LINK = "https://www.linkedin.com";
+const FACEBOOK_LINK = "https://www.facebook.com/thesaveacency";
+const BEHANCE_LINK = "https://www.behance.net/savethe";
+const YOUTUBE_LINK = "https://www.youtube.com/@SAVEAGENCY";
+const LINKEDIN_LINK =
+  "https://www.linkedin.com/company/104101746/admin/dashboard/";
 
 import {
   IconBehance,

@@ -42,10 +42,9 @@ export const ListProjects: React.FC = () => {
         <>
           <motion.figure className={`h-[250px]`}>
             <iframe
-              src="https://www.behance.net/embed/project/174045019?ilo0=1"
+              src="https://www.behance.net/embed/project/217276589?ilo0=1"
               className="h-full w-full rounded-lg shadow-lg"
               allowFullScreen
-              loading="lazy"
               frameBorder="0"
               allow="clipboard-write"
               referrerPolicy="strict-origin-when-cross-origin"
@@ -54,16 +53,15 @@ export const ListProjects: React.FC = () => {
           <motion.figcaption
             className={`p-2 font-GilroyMedium ${colorTextGrey} ${textStory}`}
           >
-            Key Visual La Mia Bảo Lộc
+            ESG Viet Vision
           </motion.figcaption>
           <div className="grid grid-cols-2 gap-2">
             <div>
               <motion.div className={`h-[300px]`}>
                 <iframe
-                  src="https://www.behance.net/embed/project/193520737?ilo0=1"
+                  src="https://www.behance.net/embed/project/216239241?ilo0=1"
                   className="h-full w-full rounded-lg shadow-lg"
                   allowFullScreen
-                  loading="lazy"
                   frameBorder="0"
                   allow="clipboard-write"
                   referrerPolicy="strict-origin-when-cross-origin"
@@ -72,16 +70,15 @@ export const ListProjects: React.FC = () => {
               <motion.figcaption
                 className={`p-2 font-GilroyMedium ${colorTextGrey} ${textStory}`}
               >
-                Smartbuild Logo and Identity
+                NDV Logistic
               </motion.figcaption>
             </div>
             <div>
               <motion.div className={`h-[300px]`}>
                 <iframe
-                  src="https://www.behance.net/embed/project/173985569?ilo0=1"
+                  src="https://www.behance.net/embed/project/216213885?ilo0=1"
                   className="h-full w-full rounded-md shadow-lg"
                   allowFullScreen
-                  loading="lazy"
                   frameBorder="0"
                   allow="clipboard-write"
                   referrerPolicy="strict-origin-when-cross-origin"
@@ -89,7 +86,7 @@ export const ListProjects: React.FC = () => {
                 <motion.figcaption
                   className={`p-2 font-GilroyMedium ${colorTextGrey} ${textStory}`}
                 >
-                  NDV Logistics-Visual Identity Design 2023
+                  The Sol City
                 </motion.figcaption>
               </motion.div>
             </div>
@@ -107,7 +104,7 @@ export const ListProjects: React.FC = () => {
             className={`relative ${sizePicListProject} w-2/5`}
           >
             <iframe
-              src="https://www.behance.net/embed/project/174045019?ilo0=1"
+              src="https://www.behance.net/embed/project/217276589?ilo0=1"
               className="h-full w-full rounded-lg shadow-lg"
               allowFullScreen
               loading="lazy"
@@ -127,7 +124,7 @@ export const ListProjects: React.FC = () => {
             className={`relative ${sizePicListProject} w-1/5`}
           >
             <iframe
-              src="https://www.behance.net/embed/project/193520737?ilo0=1"
+              src="https://www.behance.net/embed/project/216239241?ilo0=1"
               className="h-full w-full rounded-lg shadow-md"
               allowFullScreen
               loading="lazy"
@@ -147,7 +144,7 @@ export const ListProjects: React.FC = () => {
             className={`relative ${sizePicListProject} w-1/5`}
           >
             <iframe
-              src="https://www.behance.net/embed/project/173985569?ilo0=1"
+              src="https://www.behance.net/embed/project/216213885?ilo0=1"
               className="h-full w-full rounded-md shadow-lg"
               allowFullScreen
               loading="lazy"

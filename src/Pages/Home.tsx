@@ -115,7 +115,7 @@ export const Home = () => {
             </div>
             <div className="flex justify-center p-4">
               <a
-                href="https://www.behance.net/tamnguyendesign2212/projects"
+                href="https://www.behance.net/savethe"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -239,10 +239,7 @@ export const Home = () => {
               <div className="mr-20 flex items-center justify-end">
                 <span
                   onClick={() =>
-                    window.open(
-                      "https://www.behance.net/tamnguyendesign2212/projects",
-                      "_blank",
-                    )
+                    window.open("https://www.behance.net/savethe", "_blank")
                   }
                   className={`flex cursor-pointer font-GilroyRegular hover:text-orange-500 ${colorTextGrey} ${textStory} items-center space-x-2 font-GilroyRegular text-lg text-[#77787a]`}
                 >
