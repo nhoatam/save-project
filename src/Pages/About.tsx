@@ -6,7 +6,6 @@ import {
   colorTextBlack,
   colorTextGrey,
   colorTextOrange,
-  gridStaff,
   sizeAchievement,
   sizeCoreValue,
   sizeDefineSave,
@@ -21,7 +20,6 @@ import {
   textSlogan,
   textStory,
 } from "../Constants/styles";
-import { Staff } from "../Utilities/Staff";
 import LogoS from "../assets/pictures/LogoS.png";
 import LogoA from "../assets/pictures/LogoA.png";
 import LogoV from "../assets/pictures/LogoV.png";
