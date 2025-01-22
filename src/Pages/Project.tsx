@@ -284,10 +284,10 @@ export const Project = () => {
           </div>
           {/* hiệu ứng lan tỏa */}
 
-          <div className="grid grid-cols-3 grid-rows-6 gap-4 p-20">
+          <div className="grid grid-cols-3 grid-rows-2 gap-4 p-20">
             <div className="col-span-2 row-span-2 min-h-[700px]">
               <iframe
-                src="https://www.behance.net/embed/project/176496817?ilo0=1"
+                src="https://www.behance.net/embed/project/217276589?ilo0=1"
                 className="h-full w-full"
                 allowFullScreen
                 frameBorder="0"
@@ -297,16 +297,7 @@ export const Project = () => {
             </div>
             <div className="">
               <iframe
-                src="https://www.behance.net/embed/project/175296233?ilo0=1"
-                className="h-full w-full"
-                frameBorder="0"
-                allow="clipboard-write"
-                referrerPolicy="strict-origin-when-cross-origin"
-              ></iframe>
-            </div>
-            <div>
-              <iframe
-                src="https://www.behance.net/embed/project/83208237?ilo0=1"
+                src="https://www.behance.net/embed/project/216239241?ilo0=1"
                 className="h-full w-full"
                 allowFullScreen
                 frameBorder="0"
@@ -316,87 +307,7 @@ export const Project = () => {
             </div>
             <div>
               <iframe
-                src="https://www.behance.net/embed/project/175443499?ilo0=1"
-                className="h-full w-full"
-                allowFullScreen
-                frameBorder="0"
-                allow="clipboard-write"
-                referrerPolicy="strict-origin-when-cross-origin"
-              ></iframe>
-            </div>
-            <div>
-              <iframe
-                src="https://www.behance.net/embed/project/174045019?ilo0=1"
-                className="h-full w-full"
-                allowFullScreen
-                frameBorder="0"
-                allow="clipboard-write"
-                referrerPolicy="strict-origin-when-cross-origin"
-              ></iframe>
-            </div>
-            <div>
-              <iframe
-                src="https://www.behance.net/embed/project/173985569?ilo0=1"
-                className="h-full w-full"
-                allowFullScreen
-                frameBorder="0"
-                allow="clipboard-write"
-                referrerPolicy="strict-origin-when-cross-origin"
-              ></iframe>
-            </div>
-            <div className="">
-              <iframe
-                src="https://www.behance.net/embed/project/172217087?ilo0=1"
-                className="h-full w-full"
-                allowFullScreen
-                frameBorder="0"
-                allow="clipboard-write"
-                referrerPolicy="strict-origin-when-cross-origin"
-              ></iframe>
-            </div>
-            <div className="col-span-2 row-span-2">
-              <iframe
-                src="https://www.behance.net/embed/project/122134749?ilo0=1"
-                className="h-full w-full"
-                allowFullScreen
-                frameBorder="0"
-                allow="clipboard-write"
-                referrerPolicy="strict-origin-when-cross-origin"
-              ></iframe>
-            </div>
-            <div>
-              <iframe
-                src="https://www.behance.net/embed/project/121885327?ilo0=1"
-                className="h-full w-full"
-                allowFullScreen
-                frameBorder="0"
-                allow="clipboard-write"
-                referrerPolicy="strict-origin-when-cross-origin"
-              ></iframe>
-            </div>
-            <div>
-              <iframe
-                src="https://www.behance.net/embed/project/81785061?ilo0=1"
-                className="h-full w-full"
-                allowFullScreen
-                frameBorder="0"
-                allow="clipboard-write"
-                referrerPolicy="strict-origin-when-cross-origin"
-              ></iframe>
-            </div>
-            <div>
-              <iframe
-                src="https://www.behance.net/embed/project/81736781?ilo0=1"
-                className="h-full w-full"
-                allowFullScreen
-                frameBorder="0"
-                allow="clipboard-write"
-                referrerPolicy="strict-origin-when-cross-origin"
-              ></iframe>
-            </div>
-            <div>
-              <iframe
-                src="https://www.behance.net/embed/project/81732483?ilo0=1"
+                src="https://www.behance.net/embed/project/216213885?ilo0=1"
                 className="h-full w-full"
                 allowFullScreen
                 frameBorder="0"
