@@ -47,7 +47,7 @@ const lstSave: SAVE[] = [
 
 export const BrandName: React.FC = () => {
   // State to track which letter is clicked
-  const [revealedText, setRevealedText] = useState<string | null>("S");
+  const [revealedText, setRevealedText] = useState<string | null>("");
 
   // Toggle function for each letter section
   const handleInteraction = (letter: string) => {
@@ -82,7 +82,9 @@ export const BrandName: React.FC = () => {
               className={`flex cursor-pointer items-center justify-center border ${sizeBrandName} ${obj.style} shadow-2xl ${
                 revealedText === obj.name ? "bg-orange-600" : "bg-white"
               }`}
-              onClick={() => handleInteraction(obj.name)}
+              // onClick={() => handleInteraction(obj.name)}
+              onMouseEnter={() => handleInteraction(obj.name)}
+              onMouseLeave={() => handleInteraction("")}
             >
               {revealedText === obj.name ? (
                 <p className={`font-GilroyItalic ${textBrandName} text-white`}>

@@ -175,11 +175,20 @@ export const Home = () => {
 
               <div className="flex items-end justify-end">
                 <IconArrowDown
-                  className={`mb-5 mr-40 ${sizeArrowDown} animate-bounce`}
+                  className={`mb-5 mr-40 ${sizeArrowDown} animate-bounce cursor-pointer`}
+                  onClick={() => {
+                    const nextSection = document.getElementById("next-section");
+                    if (nextSection) {
+                      nextSection.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
                 />
               </div>
             </div>
-            <div className="grid h-screen grid-cols-2 bg-[#f1f1f1]">
+            <div
+              id="next-section"
+              className="grid h-screen grid-cols-2 bg-[#f1f1f1]"
+            >
               <div className="flex items-center justify-center">
                 <div className="relative z-0 w-4/6 space-y-4">
                   <p
