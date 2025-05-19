@@ -174,7 +174,7 @@ export const About = () => {
                 className={`text-left ${colorTextGrey} ${sizeTextVisionDuty} font-GilroyRegular`}
               >
                 Không ngừng nỗ lực để phát triển thương hiệu sâu sắc, nâng cao
-                trải nghiệp trong cuộc sống.
+                trải nghiệm trong cuộc sống.
               </p>
             </div>
             <div>
@@ -231,7 +231,7 @@ export const About = () => {
                 <p
                   className={`font-GilroyBold ${colorTextBlack} ${sizeTextCoreValue}`}
                 >
-                  Hiểu Quả&nbsp;
+                  Hiệu Quả&nbsp;
                   <span
                     className={`font-GilroyRegular ${colorTextGrey} ${textStory}`}
                   >
@@ -384,7 +384,7 @@ export const About = () => {
                   className={`text-left ${colorTextBlack} ${sizeTextVisionDuty} font-GilroyBold`}
                 >
                   Không ngừng nỗ lực để phát triển thương hiệu sâu sắc, nâng cao
-                  trải nghiệp trong cuộc sống.
+                  trải nghiệm trong cuộc sống.
                 </p>
               </div>
             </div>
@@ -416,7 +416,7 @@ export const About = () => {
                         <h1
                           className={`font-GilroyBold ${colorTextBlack} ${sizeTextCoreValue}`}
                         >
-                          Hiểu Quả
+                          Hiệu Quả
                         </h1>
                         <p
                           className={`text-justify font-GilroyRegular ${colorTextGrey} ${textStory}`}

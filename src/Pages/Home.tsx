@@ -78,9 +78,9 @@ export const Home = () => {
             <p
               className={`text-justify font-GilroyRegular ${colorTextGrey} ${textStory}`}
             >
-              Viên gạch được hội tụ bởi 4 chữ cái – 4 triết của Save, thể hiện
-              cho suy nghĩ nội tại mạnh mẽ mà Save luôn nỗ lực tạo ra những giá
-              trị khác biệt của thương hiệu.
+              Viên gạch được hội tụ bởi 4 chữ cái – 4 triết lý của Save, thể
+              hiện cho suy nghĩ nội tại mạnh mẽ mà Save luôn nỗ lực tạo ra những
+              giá trị khác biệt của thương hiệu.
             </p>
             <div className="absolute right-[calc(0px-40px)] top-[150px]">
               <div className="pulseIn h-[80px] w-[80px]">
@@ -202,9 +202,9 @@ export const Home = () => {
                   <p
                     className={`text-justify font-GilroyRegular ${colorTextGrey} ${textMeanSave}`}
                   >
-                    Viên gạch được hội tụ bởi 4 chữ cái – 4 triết của Save, thể
-                    hiện cho suy nghĩ nội tại mạnh mẽ mà Save luôn nỗ lực tạo ra
-                    những giá trị khác biệt của thương hiệu.
+                    Viên gạch được hội tụ bởi 4 chữ cái – 4 triết lý của Save,
+                    thể hiện cho suy nghĩ nội tại mạnh mẽ mà Save luôn nỗ lực
+                    tạo ra những giá trị khác biệt của thương hiệu.
                   </p>
                   <IconQuote
                     className="absolute bottom-[calc(0px-110px)] right-[calc(0px-30px)] -z-10 size-52"
