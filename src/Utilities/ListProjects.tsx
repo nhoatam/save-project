@@ -76,7 +76,7 @@ export const ListProjects: React.FC = () => {
             <div>
               <motion.div className={`h-[300px]`}>
                 <iframe
-                  src="https://www.behance.net/embed/project/216213885?ilo0=1"
+                  src="https://www.behance.net/embed/project/193520737?ilo0=1"
                   className="h-full w-full rounded-md shadow-lg"
                   allowFullScreen
                   frameBorder="0"
@@ -86,7 +86,7 @@ export const ListProjects: React.FC = () => {
                 <motion.figcaption
                   className={`p-2 font-GilroyMedium ${colorTextGrey} ${textStory}`}
                 >
-                  The Sol City
+                  Smartbuild Logo and Identity
                 </motion.figcaption>
               </motion.div>
             </div>
@@ -111,6 +111,8 @@ export const ListProjects: React.FC = () => {
               frameBorder="0"
               allow="clipboard-write"
               referrerPolicy="strict-origin-when-cross-origin"
+              scrolling="no" // Prevents scrollbars
+              style={{ overflow: "hidden" }} // Ensures no overflow
             ></iframe>
             <motion.figcaption
               className={`absolute bottom-0 grid ${h_figcapListProject} w-full grid-cols-10 bg-white bg-opacity-35`}
@@ -131,6 +133,8 @@ export const ListProjects: React.FC = () => {
               frameBorder="0"
               allow="clipboard-write"
               referrerPolicy="strict-origin-when-cross-origin"
+              scrolling="no" // Prevents scrollbars
+              style={{ overflow: "hidden" }} // Ensures no overflow
             ></iframe>
             <motion.figcaption
               className={`absolute bottom-0 grid ${h_figcapListProject} w-full grid-cols-10 bg-white bg-opacity-35`}
@@ -144,13 +148,15 @@ export const ListProjects: React.FC = () => {
             className={`relative ${sizePicListProject} w-1/5`}
           >
             <iframe
-              src="https://www.behance.net/embed/project/216213885?ilo0=1"
+              src="https://www.behance.net/embed/project/193520737?ilo0=1"
               className="h-full w-full rounded-md shadow-lg"
               allowFullScreen
               loading="lazy"
               frameBorder="0"
               allow="clipboard-write"
               referrerPolicy="strict-origin-when-cross-origin"
+              scrolling="no" // Prevents scrollbars
+              style={{ overflow: "hidden" }} // Ensures no overflow
             ></iframe>
             <motion.figcaption
               className={`absolute bottom-0 grid ${h_figcapListProject} w-full grid-cols-10 bg-white bg-opacity-35`}

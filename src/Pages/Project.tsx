@@ -52,7 +52,7 @@ const slides: ListCustomer[] = [
       {
         item: (
           <iframe
-            src="https://www.behance.net/embed/project/216213885?ilo0=1"
+            src="https://www.behance.net/embed/project/193520737?ilo0=1"
             className="h-[200px] w-full"
             allowFullScreen
             frameBorder="0"
@@ -60,7 +60,7 @@ const slides: ListCustomer[] = [
             referrerPolicy="strict-origin-when-cross-origin"
           ></iframe>
         ),
-        projectName: "Key Visual mở bán dự án bất động sản Lamia",
+        projectName: "Smartbuild Logo and Identity",
       },
     ],
   },
@@ -292,6 +292,8 @@ export const Project = () => {
                 frameBorder="0"
                 allow="clipboard-write"
                 referrerPolicy="strict-origin-when-cross-origin"
+                scrolling="no" // Prevents scrollbars
+                style={{ overflow: "hidden" }} // Ensures no overflow
               ></iframe>
             </div>
             <div className="">
@@ -302,16 +304,20 @@ export const Project = () => {
                 frameBorder="0"
                 allow="clipboard-write"
                 referrerPolicy="strict-origin-when-cross-origin"
+                scrolling="no" // Prevents scrollbars
+                style={{ overflow: "hidden" }} // Ensures no overflow
               ></iframe>
             </div>
             <div>
               <iframe
-                src="https://www.behance.net/embed/project/216213885?ilo0=1"
+                src="https://www.behance.net/embed/project/193520737?ilo0=1"
                 className="h-full w-full"
                 allowFullScreen
                 frameBorder="0"
                 allow="clipboard-write"
                 referrerPolicy="strict-origin-when-cross-origin"
+                scrolling="no" // Prevents scrollbars
+                style={{ overflow: "hidden" }} // Ensures no overflow
               ></iframe>
             </div>
           </div>
